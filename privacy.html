@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oddly Hooked Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, quiet legal document with a branded header */
+:root {
+  --bg: #fbfaff; --fg: #1d1a2b; --muted: #5e5878; --rule: #e3def3; --accent: #6b2fd6;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15121f; --fg: #ece8f7; --muted: #a7a0c2; --rule: #2e2843; --accent: #b892ff; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15121f; --fg: #ece8f7; --muted: #a7a0c2; --rule: #2e2843; --accent: #b892ff; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 64px; }
+main { max-width: 40rem; margin: 0 auto; display: grid; gap: 28px; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 20px; }
+.brand { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--display); font-size: 2.2rem; line-height: 1.15; margin: 8px 0 6px; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 15px; margin: 0; }
+h2 { font-family: var(--display); font-size: 1.25rem; margin: 0 0 6px; text-wrap: balance; }
+section p, section ul { margin: 0; }
+section ul { padding-left: 1.2em; display: grid; gap: 4px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Oddly Hooked</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: November 8, 2026</p>
+  </header>
+
+  <section>
+    <h2>Who we are</h2>
+    <p>Oddly Hooked is a short-video channel run by one individual creator, Alex Mansutti. It posts entertaining videos about strange facts and true stories on YouTube, Instagram and TikTok. This policy covers the Oddly Hooked channels and the private tool used to publish to them.</p>
+  </section>
+
+  <section>
+    <h2>The publishing tool</h2>
+    <p>Oddly Hooked uses a private tool, available only to the channel owner, that connects to the YouTube Data API and other platform services. It does three things:</p>
+    <ul>
+      <li>Uploads finished videos, titles, descriptions and tags to the Oddly Hooked channels.</li>
+      <li>Reads public comments on Oddly Hooked's own videos, to learn which topics viewers want next.</li>
+      <li>Reads basic performance numbers (such as views) for Oddly Hooked's own videos.</li>
+    </ul>
+    <p>The tool does not access any other person's channel or account. It does not download, store or redistribute other people's YouTube content.</p>
+  </section>
+
+  <section>
+    <h2>Information we handle</h2>
+    <p>The only viewer information the tool sees is what is already public on Oddly Hooked's videos: comment text, commenter display names and like counts. We use it only to choose future video topics. We don't sell it, share it or use it for advertising. We keep it no longer than 30 days.</p>
+  </section>
+
+  <section>
+    <h2>Google and YouTube</h2>
+    <p>The tool uses YouTube API Services. By watching or interacting with Oddly Hooked on YouTube, you are also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The channel owner can revoke the tool's access at any time through <a href="https://myaccount.google.com/permissions">Google security settings</a>.</p>
+  </section>
+
+  <section>
+    <h2>AI-generated content</h2>
+    <p>Oddly Hooked videos are made with AI tools, including AI voiceovers. Every video is labeled as AI-generated or altered content on each platform.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to <strong>oddlyhookedyt@gmail.com</strong>.</p>
+  </section>
+</main>
+</body>
+</html>

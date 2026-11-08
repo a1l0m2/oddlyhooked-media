@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oddly Hooked</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, quiet legal document with a branded header */
+:root {
+  --bg: #fbfaff; --fg: #1d1a2b; --muted: #5e5878; --rule: #e3def3; --accent: #6b2fd6;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15121f; --fg: #ece8f7; --muted: #a7a0c2; --rule: #2e2843; --accent: #b892ff; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15121f; --fg: #ece8f7; --muted: #a7a0c2; --rule: #2e2843; --accent: #b892ff; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 64px; }
+main { max-width: 40rem; margin: 0 auto; display: grid; gap: 28px; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 20px; }
+.brand { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--display); font-size: 2.2rem; line-height: 1.15; margin: 8px 0 6px; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 15px; margin: 0; }
+h2 { font-family: var(--display); font-size: 1.25rem; margin: 0 0 6px; text-wrap: balance; }
+section p, section ul { margin: 0; }
+section ul { padding-left: 1.2em; display: grid; gap: 4px; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Oddly Hooked</div>
+    <h1>Strange facts and wild true stories</h1>
+    <p class="updated">Short videos that make you say "wait, WHAT?!"</p>
+  </header>
+  <section>
+    <h2>Watch</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@OddlyHooked">YouTube: @OddlyHooked</a></li>
+      <li><a href="https://www.instagram.com/0ddlyhooked/">Instagram: @0ddlyhooked</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>About</h2>
+    <p>Oddly Hooked is run by one independent creator. Videos are made with AI tools, including AI voiceovers, and are labeled as AI-generated on each platform. A private publishing tool uploads finished videos to the channel and reads comments on the channel's own videos.</p>
+  </section>
+  <section>
+    <h2>Policies and contact</h2>
+    <p><a href="privacy.html">Privacy Policy</a> &middot; Contact: <strong>oddlyhookedyt@gmail.com</strong></p>
+  </section>
+</main>
+</body>
+</html>
